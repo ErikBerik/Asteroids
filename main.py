@@ -13,6 +13,7 @@ def main():
     y = SCREEN_HEIGHT/2
     player = Player(x,y)
     while True:
+        player.update(dt)
         log_state()
         screen.fill("black")
         player.draw(screen)
